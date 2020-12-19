@@ -9,7 +9,7 @@ WORKDIR /code
 
 COPY --from=builder /root/.local/bin /root/.local
 
-COPY /src .
+COPY ./src .
 
 ENV PATH=/root/.local:$PATH
 CMD ["python", "./server.py"]
