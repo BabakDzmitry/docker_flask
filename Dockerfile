@@ -7,5 +7,4 @@ RUN pip install -r requirements.txt
 
 COPY /src .
 
-ENV PATH=/root/.local:$PATH
 CMD ["python", "./server.py"]
